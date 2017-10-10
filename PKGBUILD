@@ -7,7 +7,7 @@ pkgdesc="Use docker to avoid netease-music bugs"
 arch=('i686' 'x86_64')
 url="https://github.com/qzwlecr/netease-cloud-music-docker-version"
 groups=('base-devel')
-depends=('docker' 'bash')
+depends=('docker' 'bash' 'xorg-xhost')
 conflicts=('netease-cloud-music')
 source=(
     "http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb"
