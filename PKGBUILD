@@ -18,9 +18,6 @@ md5sums=('d9a6fa79ffcb654254a1d8b7ba5901a3'
          'SKIP'
          'SKIP')
 
-package() {
-  chmod +x ${pkgdir}/usr/lib/netease-cloud-music/libcef.so
-}
 prepare(){
     docker info &>/dev/null
 }
