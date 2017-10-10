@@ -7,9 +7,9 @@ Good Network(~300MB)
 
 ## Usage
 
-    ```
-    makepkg -i
-    ```
+```
+makepkg -i
+```
 
 ## Help
 

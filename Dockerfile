@@ -12,4 +12,3 @@ RUN \
     rm /tmp/netease.deb
 
 CMD ["/usr/bin/netease-cloud-music","--no-sandbox"]
-ENV LANG=zh_CN.UTF-8
