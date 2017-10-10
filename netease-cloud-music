@@ -1,0 +1,20 @@
+#!/bin/bash
+docker info &>/dev/null
+if [[ $? -eq 1 ]]
+then
+    echo "Docker connect error!"
+    exit
+fi
+
+xhost + local:
+
+docker run -it --rm \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v $HOME/.config:/root/.config \
+    -v $HOME/.cache:/root/.cache \
+    -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
+    -e DISPLAY \
+    -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
+    --device /dev/snd \
+    --device /dev/dri \
+qzwlecr/netease-cloud-music-docker-version
