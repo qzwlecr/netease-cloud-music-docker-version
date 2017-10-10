@@ -12,7 +12,7 @@ conflicts=('netease-cloud-music')
 source=(
     "http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb"
     "http://music.163.com/html/web2/service.html"
-    "netease-cloud-music"
+    "https://raw.githubusercontent.com/qzwlecr/netease-cloud-music-docker-version/master/netease-cloud-music"
 )
 md5sums=('d9a6fa79ffcb654254a1d8b7ba5901a3'
          'SKIP'

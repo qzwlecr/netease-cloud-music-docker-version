@@ -17,4 +17,4 @@ docker run -it --rm \
     -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
     --device /dev/snd \
     --device /dev/dri \
-qzwlecr/netease-cloud-music-docker-version
+qzwlecr/netease-cloud-music-docker-version &>/dev/null
