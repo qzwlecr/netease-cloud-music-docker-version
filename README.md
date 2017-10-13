@@ -1,4 +1,4 @@
-# Netease Cloud Music Docker Version
+# Netease Cloud Music Docker Version (For Arch)
 
 ## Dependencies
 
