@@ -8,7 +8,7 @@ fi
 
 xhost + local:
 
-docker run -it --rm \
+docker run -dit --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v $HOME/.config:/root/.config \
     -v $HOME/.cache:/root/.cache \
