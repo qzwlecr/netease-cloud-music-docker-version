@@ -12,6 +12,7 @@ docker run -dit --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v $HOME/.config:/root/.config \
     -v $HOME/.cache:/root/.cache \
+    -v $HOME/Music:/root/Music \
     -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
     -e DISPLAY \
     -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
