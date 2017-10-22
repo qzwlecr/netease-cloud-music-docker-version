@@ -1,4 +1,5 @@
 #!/bin/bash
+newgrp docker << QZWLECR
 docker info &>/dev/null
 if [[ $? -eq 1 ]]
 then
@@ -6,7 +7,7 @@ then
     exit
 fi
 
-xhost + local:
+xhost + local: &>/dev/null
 
 docker run -dit --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -20,3 +21,4 @@ docker run -dit --rm \
     --device /dev/dri \
     --ipc host \
 qzwlecr/netease-cloud-music-docker-version &>/dev/null
+QZWLECR

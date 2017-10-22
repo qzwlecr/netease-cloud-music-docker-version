@@ -7,6 +7,7 @@ pkgdesc="Use docker to avoid netease-music bugs"
 arch=('i686' 'x86_64')
 url="https://github.com/qzwlecr/netease-cloud-music-docker-version"
 groups=('base-devel')
+install="netease-cloud-music-docker-version.install"
 depends=('docker' 'bash' 'xorg-xhost')
 conflicts=('netease-cloud-music')
 source=(
@@ -18,12 +19,7 @@ md5sums=('d9a6fa79ffcb654254a1d8b7ba5901a3'
          'SKIP'
          'SKIP')
 
-prepare(){
-    docker info &>/dev/null
-}
-
 package() {
-    docker pull qzwlecr/netease-cloud-music-docker-version
     cd ${srcdir}
     tar -xvf data.tar.xz -C ${pkgdir}
     install -D -m644 service.html ${pkgdir}/usr/share/licenses/$pkgname/license.html

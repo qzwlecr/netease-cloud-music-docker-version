@@ -1,0 +1,15 @@
+post_install(){
+    systemctl enable docker --now
+    newgrp docker
+    docker pull qzwlecr/netease-cloud-music-docker-version
+}
+
+post_upgrade(){
+    newgrp docker 
+    docker pull qzwlecr/netease-cloud-music-docker-version
+}
+
+post_remove(){
+    newgrp docker
+    docker rmi -f qzwlecr/netease-cloud-music-docker-version
+}
