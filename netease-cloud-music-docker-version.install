@@ -1,15 +1,24 @@
-post_install(){
+pre_install(){
     systemctl enable docker --now
-    newgrp docker
+}
+
+post_install(){
     docker pull qzwlecr/netease-cloud-music-docker-version
+    echo "[WARNING!!]Please use \"usermod -a -G docker YOURNAME\" to make sure you have access to docker"
+}
+
+pre_upgrade(){
+    systemctl enable docker --now
 }
 
 post_upgrade(){
-    newgrp docker 
     docker pull qzwlecr/netease-cloud-music-docker-version
 }
 
+pre_remove(){
+    systemctl enable docker --now
+}
+
 post_remove(){
-    newgrp docker
     docker rmi -f qzwlecr/netease-cloud-music-docker-version
 }

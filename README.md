@@ -2,16 +2,33 @@
 
 ## Dependencies
 
-Docker-daemon(accessible by your user, you can test it by `docker info`)
-Good Network(~300MB)
+Docker
+
+Good Network(~300MB Data)
+
+## Advantages
+
+Better user experience for archlinux.
+
+- HQ Music
+- No White Screen
+- No Lyrics Crash
+- Normal Right Menu
 
 ## Usage
 
 ```
-makepkg -i
+makepkg -si
 ```
 
 ## Help
 
-If you stop at `prepare()` in `makepkg`, please check your docker-daemon connection.
+Please use **usermod -a -G docker YOURNAME** after installation to make sure your user can use docker.
 
+You can only use "$HOME/MUSIC" for your own music in this application.
+
+## Bugs
+
+The cursor looks strange.
+
+The network connection may interrupt from time to time.
