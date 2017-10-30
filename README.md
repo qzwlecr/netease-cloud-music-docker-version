@@ -23,12 +23,10 @@ makepkg -si
 
 ## Help
 
-Please use **usermod -a -G docker YOURNAME** after installation to make sure your user can use docker.
+Please use **usermod -a -G docker USERNAME** after installation to make sure your user can use docker.
 
 You can only use "$HOME/MUSIC" for your own music in this application.
 
 ## Bugs
-
-The cursor looks strange.
 
 The network connection may interrupt from time to time.

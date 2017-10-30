@@ -1,9 +1,9 @@
 # Maintainer: qzwlecr <qzwlecr@gmail.com>
 
-pkgname=netease-cloud-music-docker
+pkgname=netease-cloud-music-docker-version
 pkgver=1.0.0_2
-pkgrel=1
-pkgdesc="An online music player by Netease. Run on docker to avoid bugs."
+pkgrel=2
+pkgdesc="An online music player by netease. Run on docker to avoid bugs."
 arch=('i686' 'x86_64')
 url="https://github.com/qzwlecr/netease-cloud-music-docker-version"
 install="netease-cloud-music-docker-version.install"
