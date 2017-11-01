@@ -6,7 +6,7 @@ ARG NETEASE_URL=http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_
 
 RUN \
     apt-get update && \
-    apt-get install -y --no-install-recommends wget dbus-x11 libcanberra-gtk-module fonts-wqy-zenhei packagekit-gtk3-module&& \
+    apt-get install -y --no-install-recommends ca-certificates wget dbus-x11 libcanberra-gtk-module fonts-wqy-microhei packagekit-gtk3-module&& \
     wget -O /tmp/netease.deb "$NETEASE_URL" && \
     apt-get install -y --no-install-recommends /tmp/netease.deb && \
     rm /tmp/netease.deb && \

@@ -10,8 +10,8 @@ xhost + local: &>/dev/null
 
 sg docker "docker run -dit --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v $HOME/.config:/root/.config \
-    -v $HOME/.cache:/root/.cache \
+    -v $HOME/.config/netease-cloud-music:/root/.config/netease-cloud-music \
+    -v $HOME/.cache/netease-cloud-music:/root/.cache/netease-cloud-music \
     -v $HOME/Music:/root/Music \
     -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
     -v /usr/share/icons:/usr/share/icons:ro \
