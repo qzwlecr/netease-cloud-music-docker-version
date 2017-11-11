@@ -21,6 +21,8 @@ Better user experience for archlinux.
 makepkg -si
 ```
 
+Or Install from AUR.
+
 ## Help
 
 Please use **usermod -a -G docker USERNAME** after installation to make sure your user can use docker.
